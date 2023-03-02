@@ -40,15 +40,15 @@ class Dashboard extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      loading: true,
+      focused: null,
+      days: [],
+      appointments: {},
+      interviewers: {}
+    }
+  
     this.selectPanel = this.selectPanel.bind(this);
-  }
-
-  state = {
-    loading: true,
-    focused: null,
-    days: [],
-    appointments: {},
-    interviewers: {}
   }
 
   selectPanel = id => {
